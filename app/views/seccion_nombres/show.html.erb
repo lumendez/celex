@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @seccion_nombre.nombre %>
+</p>
+
+<%= link_to 'Editar', edit_seccion_nombre_path(@seccion_nombre) %> |
+<%= link_to 'Regresar', seccion_nombres_path %>

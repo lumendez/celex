@@ -1,0 +1,12 @@
+<h2 class="sub">Registro de inscripci&oacute;n</h2>
+<div class="row">
+  <center>
+    <%= link_to "Descargar talón de inscripción", talon_inscripcion_registros_path(@inscripcion_registro, format: :pdf), class:'btn btn-primary btn-lg' %>
+  </center>
+</div>
+
+<div class="row">
+  <div class="col-md-8">
+    <%= render 'inscripcion_registros/links' %>
+  </div>
+</div>

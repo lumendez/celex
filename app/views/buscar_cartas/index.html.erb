@@ -1,0 +1,18 @@
+<h2 class="sub">Buscar carta compromiso</h2>
+<div class="row">
+  <div class="col-md-12">
+    <p>Escriba la CURP con la que creó su registro de inscripción para recuperar su carta compromiso.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <%= form_tag(carta_buscar_cartas_path, method: :get) do %>
+      <%= label_tag 'CURP:' %>
+      <%= text_field_tag :folio_carta, params[:folio_carta], class:'form-control inicio', required: true, maxlength: 18 %>
+      <br>
+      <%= submit_tag 'Buscar carta', name: nil, class:'btn btn-md btn-primary' %>
+    <% end %>
+    <br>
+    <%= link_to 'Regresar', new_unitario_path %>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+.texto-cec{font-size: 12px;}
+.texto-cec span {font-size: 10px;}
+/*.texto-politicas span {font-size: 16px; letter-spacing: 5px;}*/
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #talon, #talon * {
+    visibility: visible;
+  }
+  #talon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #grupos, #grupos * {
+    visibility: visible;
+  }
+  #grupos {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #apertura, #apertura * {
+    visibility: visible;
+  }
+  #apertura {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #anexos-unicos, #anexos-unicos * {
+    visibility: visible;
+  }
+  #anexos-unicos {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #conclusiones-evento, #conclusiones-evento * {
+    visibility: visible;
+  }
+  #conclusiones-evento {
+    position: absolute;
+    left: 0;
+    top: 200%;
+  }
+  #carta_compromiso, #carta_compromiso * {
+    visibility: visible;
+    font-size: 18px;
+    line-height: 100%;
+  }
+  #carta_compromiso {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #carta_compromiso p, ul, li {font-size:20px; line-height: 100%;}
+}

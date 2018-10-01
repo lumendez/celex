@@ -1,0 +1,66 @@
+<h1 class="sub">Lista de grupos</h1>
+<%= form_for_filterrific @filterrific do |f| %>
+<div class="jumbotron">
+  <div class="row">
+    <div class="col-md-4">
+      <%= f.label :with_curso, 'Filtrar por curso' %>
+      <%= f.select(
+        :with_curso,
+        @filterrific.select_options[:with_curso],
+        { include_blank: '- Todos -' }, class:'form-control'
+      ) %>
+    </div>
+    <div class="col-md-4">
+      <%= f.label :with_instructor, 'Filtrar por instructor' %>
+      <%= f.select(
+        :with_instructor,
+        @filterrific.select_options[:with_instructor],
+        { include_blank: '- Todos -' }, class:'form-control'
+      ) %>
+    </div>
+    <div class="col-md-4">
+      <%= f.label :sorted_by, 'Ordenar por' %>
+      <%= f.select(:sorted_by, @filterrific.select_options[:sorted_by], { include_blank: '- Por defecto -'}, class:'form-control') %>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <%= f.label :with_nivel, 'Filtrar por nivel' %>
+      <%= f.select(
+        :with_nivel,
+        @filterrific.select_options[:with_nivel],
+        { include_blank: '- Todos -' }, class:'form-control'
+      ) %>
+    </div>
+    <div class="col-md-4">
+      <%= f.label :with_anio, 'Filtrar por año' %>
+      <%= f.select(
+        :with_anio,
+        @filterrific.select_options[:with_anio],
+        { include_blank: '- Todos -' }, class:'form-control'
+      ) %>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-sm-3">
+        <%= link_to(
+          'Quitar filtros',
+          reset_filterrific_url,
+          class: 'btn btn-primary'
+        ) %>
+      </div>
+  </div>
+</div>
+<% end %>
+<strong><%= link_to 'Agregar grupo', new_grupo_path %></strong>
+<br>
+<br>
+<%= render(
+  partial: 'grupos/lista',
+  locals: { grupos: @grupos }
+) %>
+
+<br>
+<strong><%= link_to 'Agregar grupo', new_grupo_path %></strong>
