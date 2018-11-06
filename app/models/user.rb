@@ -44,7 +44,7 @@ class User < ApplicationRecord
 
   # Definición de roles para devise
   def assign_role
-    self.role = Role.find_by nombre: "Invitado" if self.role.nil?
+    self.role = Role.find_by nombre: "Administrador" if self.role.nil?
   end
 
   # Definición de roles para devise
