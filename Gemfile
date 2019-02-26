@@ -79,7 +79,9 @@ gem 'yaml_db'
 
 gem "mysql2", "~> 0.3.11"
 
-gem 'puma', '~> 3.0'
+#gem 'puma', '~> 3.0'
+
+gem "passenger"
 
 gem "therubyracer"
 
