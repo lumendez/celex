@@ -2,11 +2,11 @@
 
 Autores:
 
-Dr. Mauro Alberto Enciso Aguilar
-M. en C. Jose Antonio Sixto Berrocal
-M. en C. Elvia Angeles Aldana
-M. en C. Luis Alberto Mendez Cruz
-C. Mara Ayala Samra
+Dr. Mauro Alberto Enciso Aguilar  
+M. en C. Jose Antonio Sixto Berrocal  
+M. en C. Elvia Angeles Aldana  
+M. en C. Luis Alberto Mendez Cruz  
+C. Mara Ayala Samra  
 
 * Version de Ruby
 ruby 2.2.5p
