@@ -1,18 +1,27 @@
 <div class="col-md-12">
-  <center>
-    <%= image_tag "dfle_logo.png" %>
-  </center>
-  <h1 align="center" class="texto-inicio">Dirección de Formación en Lenguas Extranjeras</h1>
-  <div class="col-md-6" align="center">
-    <%= link_to new_user_registration_path do %>
-      <%= image_tag "inscripcion.png" %>
-      <h3>Registrarse</h3>
-    <% end %>
+  <div class="row">
+    <div class="col-md-6">
+      <%= image_tag "ipn.png", style:"float: left; margin: -15px 0px 0px 0px;" %>
+      <h4>Instituto Politécnico Nacional<br>"La técnica al servicio de la patria"</h4>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag "dfle_logo.png", style:"float: right; margin: -10px 0px 0px 15px;" %>
+      <h4 align="right" style="margin-top:15px;">Dirección de Formación en Lenguas Extranjeras</h4>
+    </div>
   </div>
-  <div class="col-md-6"align="center">
-    <%= link_to new_user_session_path do %>
-      <%= image_tag "login.png" %>
-      <h3>Iniciar sesi&oacute;n</h3>
-    <% end %>
+  <div class="row">
+    <h1 align="center" class="texto-inicio">Sistema de Trayectoria de Lenguas Extranjeras</h1>
+    <div class="col-md-6" align="center">
+      <%= link_to new_user_registration_path do %>
+        <%= image_tag "inscripcion.png" %>
+        <h3>Registrarse</h3>
+      <% end %>
+    </div>
+    <div class="col-md-6"align="center">
+      <%= link_to new_user_session_path do %>
+        <%= image_tag "login.png" %>
+        <h3>Iniciar sesi&oacute;n</h3>
+      <% end %>
+    </div>
   </div>
 </div>

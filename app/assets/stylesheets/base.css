@@ -35,9 +35,6 @@ body {
 	list-style: none;
 }
 
-.banner .contbanner {
-    /*height: 100px;*/
-}
 .gplus, .rss, .yutu, .face, .twt, .blog {
     background: rgba(0, 0, 0, 0) url("Icons601_01.png") repeat scroll 0 0;
     float: right;
@@ -575,7 +572,7 @@ background-color: white;
 
 .subs{border-bottom: 3px #999999 solid; padding-bottom:10px; font-weight:bold; width:50%; margin-bottom: 25px;}
 
-.texto-inicio{padding-bottom:30px; font-weight:bold; font-size: 2.5em; color: rgba(0,0,0,0.7); text-shadow: 2px 2px 0px rgba(0,0,0,0.1);}
+.texto-inicio{padding-bottom:30px; font-weight:bold; font-size: 3.5em; color: rgba(0,0,0,0.7); text-shadow: 2px 2px 0px rgba(0,0,0,0.1);}
 
 
 .privacidad {
