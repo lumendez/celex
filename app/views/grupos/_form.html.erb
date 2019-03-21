@@ -81,7 +81,7 @@
 
   <div class="form-group col-md-4">
     <%= f.label :registro, "Número de registro del curso" %>
-    <%= collection_select(:grupo, :registro, RegistroCurso.all, :registro, :registro, {prompt: 'Seleccione'}, class: 'form-control') %>
+    <%= f.text_field :registro, class: 'form-control' %>
   </div>
 
   <div class="form-group col-md-4">
@@ -96,7 +96,7 @@
 
   <div class="form-group col-md-4">
     <%= f.label :cupo, "Cupo" %>
-    <%= collection_select(:grupo, :cupo, RegistroCurso.all, :cupo, :cupo, {prompt: 'Seleccione'}, class: 'form-control')  %>
+    <%= f.text_field :cupo, class: 'form-control' %>
   </div>
 
   <div class="form-group col-md-4">
