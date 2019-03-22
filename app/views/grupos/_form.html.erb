@@ -101,7 +101,7 @@
 
   <div class="form-group col-md-4">
     <%= f.label :duracion, "Duración del programa" %>
-    <%= collection_select(:grupo, :duracion, RegistroCurso.all, :horas, :horas, {prompt: 'Seleccione'}, class: 'form-control')  %>
+    <%= f.text_field :duracion, class: 'form-control'  %>
   </div>
 
   <div class="form-group col-md-4">
