@@ -49,7 +49,7 @@ class User < ApplicationRecord
 
   # Definición de roles para devise
   def assign_centro
-    self.centro = Centro.find_by nombre: "Ingeniero Eugenio Méndez Docurro" if self.centro.nil?
+    self.centro = Centro.find_by nombre: "CELEX ESIA Zacatenco" if self.centro.nil?
   end
 
   # Definiciones de los roles dentro del sistema
