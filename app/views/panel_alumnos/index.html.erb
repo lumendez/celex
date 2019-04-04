@@ -70,7 +70,7 @@
         <% if fr_inscripcion_registro.examen_medio.blank? || fr_inscripcion_registro.examen_final.blank? %>
         <th colspan="2">Opciones</th>
         <% else %>
-        <th>Calificación final</td>
+        <th>Calificación final</th>
         <% end %>
       </thead>
       <tr>
@@ -120,7 +120,7 @@
         <% if it_inscripcion_registro.examen_medio.blank? || it_inscripcion_registro.examen_final.blank? %>
         <th colspan="2">Opciones</th>
         <% else %>
-        <th>Calificación final</td>
+        <th>Calificación final</th>
         <% end %>
       </thead>
       <tr>
@@ -218,64 +218,37 @@
         <p><strong>Cuotas</strong></p>
         <table class="table table-bordered">
           <thead>
-            <tr>
-              <th>Pago del curso de idiomas</th>
-              <th>B&aacute;sico</th>
-              <th>Intermedio</th>
-              <th>Avanzado</th>
-              <th>Certificaci&oacute;n</th>
-            </tr>
+            <th>Nombre de la cuenta</th>
+            <th>Número de la cuenta</th>
           </thead>
           <tr>
-            <td>Comunidad Polit&eacute;cnica.</td>
-            <td>$544.00</td>
-            <td>$544.00</td>
-            <td>$544.00</td>
-            <td>$1,241.00</td>
+            <td>BBVA BANCOMER Fondo de Investigación Científica y desarrollo tecnológico</td>
+            <td>0166181759</td>
           </tr>
           <tr>
-            <td>P&uacute;blico general.</td>
-            <td>$1,053.00</td>
-            <td>$1,053.00</td>
-            <td>$1,053.00</td>
-            <td>$1,523.00</td>
-          </tr>
-        </table>
-        <table class="table table-bordered">
-          <thead>
-              <tr>
-                <th>Examen de colocaci&oacute;n</th>
-                <th>Costo</th>
-              </tr>
-          </thead>
-          <tr>
-              <td>Comunidad polit&eacute;cnica.</td>
-              <td>$116.00</th>
+            <td></td>
+            <td>Cuotas para todos los niveles</td>
           </tr>
           <tr>
-              <td>P&uacute;blico general.</td>
-              <td>$385.00</th>
+            <td>Alumnos</td>
+            <td><%= @cuota_ipn %></td>
+          </tr>
+          <tr>
+            <td>Egresados</td>
+            <td><%= @cuota_externos %></td>
+          </tr>
+          <tr>
+            <td>Examen de colocación</td>
+            <td>Sin costo</td>
           </tr>
         </table>
         <p><strong>Leer atentamente:</strong></p>
-        <p>Los CELEX CEC Ingeniero Eugenio M&eacute;ndez Docurro <strong>se reservan el derecho de apertura o cancelaci&oacute;n de grupos
+        <p>ESIA Zacatenco<strong> se reserva el derecho de apertura o cancelaci&oacute;n de grupos
     de acuerdo a la demanda</strong>, a su vez, los CELEX &uacute;nicamente <strong>recibir&aacute;n dep&oacute;sitos bancarios por los importes
     exactos</strong> antes mencionados y en las fechas establecidas anualmente en el calendario de actividades.</p>
         <p>Se deber&aacute; entregar el <strong>comprobante de pago en original, para hacer v&aacute;lida su inscripci&oacute;n</strong>.</p>
         <p>En el caso de la no apertura del curso en el nivel y horario solicitado, se le realizar&aacute; una <strong>Postergaci&oacute;n
           Acad&eacute;mica</strong> para los siguientes cursos, ya que <strong>no existe el instrumento de devoluci&oacute;n del importe pagado</strong>.</p>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Banco</th>
-              <th>Dep&oacute;sitos a cuenta</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>BBVA Bancomer</td>
-            <td>0168358273</td>
-          </tr>
-        </table>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true" id="Aceptar">Acepto los t&eacute;rminos y condiciones</button>
