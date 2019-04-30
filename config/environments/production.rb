@@ -87,16 +87,4 @@ Rails.application.configure do
   #Host para recuperar la contraseña
   config.action_mailer.default_url_options = {:host => 'https://www.stle.dfle.ipn.mx'}
   config.time_zone = 'America/Mexico_City'
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.default :charset => "utf-8"
-  config.action_mailer.smtp_settings = {
-    address: "correo.ipn.mx",
-    port: 587,
-    domain: "activedirectory",
-    authentication: "login",
-    enable_starttls_auto: true,
-    user_name: ENV['ipn_username'],
-    password: ENV['ipn_password']
-}
 end
