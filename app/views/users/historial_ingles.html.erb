@@ -13,10 +13,9 @@
   <br>
   <br>
   <p><strong>A QUIÉN CORRESPONDA:</strong></p>
-  <p align="justify">Con base a la documentación que obra en los expedientes de los Cursos Curriculares de Lenguas Extranjeras (CELEX) del Centro de Educación Continua
-     Ingeniero Eugenio Méndez Docurro, hace constar que <% if @user.sexo == "H" %>el C. <% elsif @user.sexo == "M" %>la C. <% end %><strong><%= @user.nombre_completo %></strong>,
+  <p align="justify">Con base a la documentación que obra en los expedientes de los Cursos Curriculares de Lenguas Extranjeras (CELEX) d, hace constar que <% if @user.sexo == "H" %>el C. <% elsif @user.sexo == "M" %>la C. <% end %><strong><%= @user.nombre_completo %></strong>,
       <% if @user.matricula.present? %> con número de matrícula: <%= @user.matricula %>,<% end %> <% if @avanzado5.present? && @avanzado5.promedio >= 80 %>ha concluido los módulos <% end %>ha cursado los módulos
-     del programa de Inglés de este Centro como a continuación se detalla:</p>
+     del programa de Inglés de esta Unidad Académica como a continuación se detalla:
   </p>
   <center>
     <table class="historial" width="95%">
