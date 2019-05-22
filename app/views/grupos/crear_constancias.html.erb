@@ -1,5 +1,5 @@
 <div id="grupos">
-<h2 class="sub">Seleccione las constancias que se van a crear</h2>
+<h2 class="sub">Seleccione los diplomas que se van a crear</h2>
 <p><strong>Nombre del profesor:</strong> <%= @grupo.user.nombre_completo %></p>
 <p><strong>Grupo:</strong> <%= @grupo.nombre %></p>
 <p><strong>Idioma:</strong> <%= @grupo.idioma %></p>
@@ -33,7 +33,7 @@
   </tbody>
 </table>
 <input type="checkbox" id="selectAll" value="selectAll"><strong> Seleccionar / Deseleccionar todos</strong><br><br>
-<%= submit_tag "Crear lista de constancias", class: 'btn btn-primary' %>
+<%= submit_tag "Crear lista de diplomas", class: 'btn btn-primary' %>
 <br>
 <br>
 <% end %>

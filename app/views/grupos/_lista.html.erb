@@ -3,7 +3,7 @@
   <table class="table table-bordered table-hover">
     <thead>
       <tr>
-        <th>Seleccionar</td>
+        <th>Seleccionar</th>
         <!--<th>Nombre</th>-->
         <th>Idioma</th>
         <th>Curso</th>
@@ -46,12 +46,12 @@
             <% if grupo.habilitar_constancias_grupo == true %>
             <td align="center">
               <%= link_to crear_constancias_grupos_path(grupo) do %>
-                <span class="glyphicon glyphicon-education" title="habilitar constancias"></span>
+                <span class="glyphicon glyphicon-education" title="habilitar diplomas"></span>
               <% end %>
             </td>
             <% else %>
             <td align="center">
-              <span class="glyphicon glyphicon-education glyphicon-education-inactivo" title="habilitar constancias"></span>
+              <span class="glyphicon glyphicon-education glyphicon-education-inactivo" title="habilitar diplomas"></span>
             </td>
             <% end %>
           <% end %>

@@ -1,9 +1,9 @@
-<h2 class="sub">Las siguientes contancias se van a crear:</h2>
+<h2 class="sub">Los siguientes diplomas se van a crear:</h2>
 <%= form_for :inscripcion_registro, url: actualizar_multiples_constancias_inscripcion_registros_path, :html => { :method => :patch } do |form| %>
 <div class="row">
   <div class="col-md-12">
     <table class="table table-bordered">
-      <th>Nombre del grupo</td>
+      <th>Nombre del grupo</th>
       <th>Grupo</th>
       <th>Curso</th>
       <th>A&ntilde;o</th>
@@ -21,7 +21,7 @@
 </div>
 <div class="row">
   <div class="form-group col-sm-4">
-    <%= form.label :habilitar_constancia, 'Crear constancia(s)' %>
+    <%= form.label :habilitar_constancia, 'Crear diploma(s)' %>
     <%= form.check_box  :habilitar_constancia, class: 'form-control' %>
   <br>
   </div>
